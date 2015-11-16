@@ -7,3 +7,6 @@
 				= time_ago_in_words(post.created_at)
 				ago by
 				= post.user.email
+			%p.comments
+				= post.comments.count
+				Comments
